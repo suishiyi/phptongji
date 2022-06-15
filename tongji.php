@@ -59,7 +59,7 @@ header("content-type:text/html;charset=utf-8");
   $fp = fopen("$DOCUMENT_ROOT/tongji.txt",'w+');
   fclose($fp);
   
-  #unlink("tongji.txt");
+  //unlink("tongji.txt");
   file_put_contents("tongji.txt",$count);  //讲$count的值写入tongji.txt文件中
   unset($count);
   
