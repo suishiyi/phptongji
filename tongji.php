@@ -47,7 +47,6 @@ header("content-type:text/html;charset=utf-8");
    {
     $count=file_get_contents("tongji.txt");  //取出文件tongji.txt中的内容
    }
- file_put_contents("tongji.txt",1);  //讲$count的值写入tongji.txt文件中
   }
   
   $count= $count+1;
@@ -57,8 +56,6 @@ header("content-type:text/html;charset=utf-8");
    //打开关闭txt操作，以前的必须手动打开txt，删除内容
   $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
   $fp = fopen("$DOCUMENT_ROOT/tongji.txt",'w+');
-
-
   fclose($fp);
   
   unlink("tongji.txt");
