@@ -5,7 +5,7 @@ php统计
 header("content-type:text/html;charset=utf-8");
 if(file_exists("tongji2.txt")) {
 echo "存在";
-$count=file_get_contents("tongji.txt"); 
+$count=file_get_contents("tongji2.txt"); 
 $count= $count+1;
 echo "php".$count;
 $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
