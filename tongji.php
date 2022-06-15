@@ -43,7 +43,7 @@ header("content-type:text/html;charset=utf-8");
   if(file_exists("tongji.txt"))   //判断是否存在tongji.txt文件
   {
     echo "存在";
-    while($count = '')
+    while($count = ' ')
    {
     $count=file_get_contents("https://sanliuyi101phptongji.herokuapp.com/tongji.txt");  //取出文件tongji.txt中的内容
    }
