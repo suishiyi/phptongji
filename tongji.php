@@ -61,7 +61,7 @@ header("content-type:text/html;charset=utf-8");
   
   unlink("tongji.txt");
   file_put_contents("tongji.txt",$count);  //讲$count的值写入tongji.txt文件中
-
+  unset($count);
   
   
 ?>
