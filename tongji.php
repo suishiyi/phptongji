@@ -48,7 +48,7 @@ header("content-type:text/html;charset=utf-8");
     $count=file_get_contents("tongji.txt");  //取出文件tongji.txt中的内容
    }
   }
-      $count=file_get_contents("tongji.txt");  //取出文件tongji.txt中的内容
+      $count=file_get_contents("https://sanliuyi101phptongji.herokuapp.com/tongji.txt");  //取出文件tongji.txt中的内容
   $count= $count+1;
   echo "php".$count;
   
