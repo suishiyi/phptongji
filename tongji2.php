@@ -2,7 +2,7 @@
 <br/><br/><br/><br/><br/><br/>
 php统计
 <?php
-filetxt="tongji2.txt"
+$filetxt="tongji2.txt"
 header("content-type:text/html;charset=utf-8");
 if(file_exists($filetxt)) {
 echo "存在";
