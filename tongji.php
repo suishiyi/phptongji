@@ -45,10 +45,10 @@ header("content-type:text/html;charset=utf-8");
     echo "存在";
     while($count<1)
    {
-    $count=file_get_contents("https://sanliuyi101phptongji.herokuapp.com/tongji.txt");  //取出文件tongji.txt中的内容
+    $count=file_get_contents("tongji.txt");  //取出文件tongji.txt中的内容
    }
   }
-  $count=file_get_contents("https://sanliuyi101phptongji.herokuapp.com/tongji.txt"); 
+  
   $count= $count+1;
   echo "php".$count;
   
