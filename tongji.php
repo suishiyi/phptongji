@@ -42,13 +42,14 @@ header("content-type:text/html;charset=utf-8");
  //$count=0;
   if(file_exists("tongji.txt"))   //判断是否存在tongji.txt文件
   {
+    $count=file_get_contents("tongji.txt");  //取出文件tongji.txt中的内容
     echo "存在";
     while($count  === "")
    {
     $count=file_get_contents("tongji.txt");  //取出文件tongji.txt中的内容
    }
   }
-      $count=file_get_contents("tongji.txt");  //取出文件tongji.txt中的内容
+
   $count= $count+1;
   echo "php".$count;
   
