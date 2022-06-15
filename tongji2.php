@@ -12,7 +12,7 @@ $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
 $fp = fopen("$DOCUMENT_ROOT/tongji2.txt",'w+');
 fclose($fp);
 //unlink("tongji.txt");
-file_put_contents("tongji.txt",$count); 
+file_put_contents("tongji2.txt",$count); 
 ?>
 
 
